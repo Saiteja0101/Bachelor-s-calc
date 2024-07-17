@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="750.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginPageController">
+   <top>
+      <TitledPane animated="false" prefHeight="0.0" prefWidth="750.0" text="Log in / Sign in" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+         <font>
+            <Font name="Baskerville Old Face" size="25.0" />
+         </font>
+      </TitledPane>
+   </top>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="enterUserName" alignment="CENTER" minHeight="30.0" onAction="#UserNameTField" promptText="Enter UserName" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Baskerville Old Face" size="30.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="100.0" right="100.0" top="25.0" />
+               </VBox.margin>
+            </TextField>
+            <PasswordField fx:id="password" alignment="CENTER" onAction="#pwdTField" promptText="Password" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Baskerville Old Face" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="100.0" right="100.0" top="25.0" />
+               </VBox.margin>
+            </PasswordField>
+            <Button fx:id="LoginBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#loginBtn" text="Login" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets left="200.0" right="200.0" top="100.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Baskerville Old Face" size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
